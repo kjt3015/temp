@@ -1,0 +1,24 @@
+/* 게시판 목록 폰트 */
+h2{
+    border-bottom: 3px solid black;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+h4{
+    padding-bottom: 50px;
+}
+
+/* 컨텐츠 박스 */
+#contentBox{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}

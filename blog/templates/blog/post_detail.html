@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>board</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'blog/css_style/index.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'blog/css_style/posts.css' %}" media="screen">
+
+</head>
+
+<body>
+    <!-- 메인박스 -->
+    <div id="mainBox">
+        
+        <!-- 메뉴 세션 -->
+        <div class="menuSection">
+            <!-- insert -->
+        </div>
+        
+        <!-- 게시물 세션 -->
+        <div class="postListSection">
+            
+            <!-- 게시물 리스트 -->
+            <div class="postList">
+
+                <nav>
+                    <a href="/blog/">Blog</a>
+                </nav>
+                <h1>{{ post.title }}</h1>
+                <h4>{{ post.created_at  }}</h4>
+                
+                <div id="contentBox">
+                    <p>{{ post.content }}</p>
+                </div>
+                
+                <h3>
+                    여기 댓글이 들어올 수 있겠죠?
+                </h3>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>

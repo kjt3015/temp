@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="board.css">
+
+    <!-- 테이블을 활용하여 작성자, 제목, 날짜 등 출력 -->
+</head>
+
+<body>
+    <div id="mainBox">
+        <div id="grid">
+            <div class="grid_element" id="gone">
+                <p style="text-align: center;">AD</p>
+            </div>
+            
+            <div class="board_list_section">
+                <div class="grid_element">
+                    
+                    {% for p in post_list %}
+                    <h2><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></h2>
+                    <h4>{{ p.created_at }}</h4>
+                    <p>{{ p.content }}</p>        
+                    {% endfor %}    
+                    
+                </div>
+                <a href="">LogOut</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
